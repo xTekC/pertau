@@ -30,7 +30,7 @@ pub fn get_template<G: Html>() -> Template<G> {
 #[perseus::head]
 pub fn head(_props: IndexPageProps) -> View<SsrNode> {
     view! {
-        title { "Index Page | Perseus Example – Basic" }
+        title { "Index Page | Web App" }
     }
 }
 

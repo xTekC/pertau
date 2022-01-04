@@ -9,7 +9,7 @@ pub fn get_error_pages<G: Html>() -> ErrorPages<G> {
     });
     error_pages.add_page(404, |_, _, _, _| {
         view! {
-            p { "Page not found." }
+            p { "Page Not Found." }
         }
     });
 

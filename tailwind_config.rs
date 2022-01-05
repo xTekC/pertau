@@ -7,3 +7,8 @@ module.exports = {
   plugins: [],
 }
 */
+
+#[wasm-bindgen]
+pub fn module_exports() {
+    
+}

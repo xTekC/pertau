@@ -14,4 +14,5 @@ module.exports = {
 pub fn module_exports() {
     let content = ;
     let theme = ;
+    let plugins = ;
 }

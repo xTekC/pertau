@@ -12,7 +12,7 @@ pub fn about_page() -> View<G> {
 #[perseus::head]
 pub fn head() -> View<SsrNode> {
     view! {
-        title { "About Page | Perseus Example – Basic" }
+        title { "About Page | Basic" }
     }
 }
 

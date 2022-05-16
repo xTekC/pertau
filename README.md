@@ -1,5 +1,7 @@
-# perseus-app
-Full Stack Web App using Perseus.
+# **PerTau**
 
-Wrapping/Mirroring JS files with wasm-bindgen.
+A pure Rust, cross platform App.
 
+- **Perseus** for the **Frontend**
+
+- **Tauri** for the **Backend**

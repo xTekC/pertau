@@ -1,8 +1,3 @@
-/target
-Cargo.lock
-
-.perseus/
-
-**/*.rs.bk
-
-.env
+/dist/
+/target/
+/Cargo.lock

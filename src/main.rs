@@ -1,11 +1,9 @@
-// mod app;
+mod templates;
 
-// use app::App;
+use perseus::{Html, PerseusApp};
 
-// fn main() {
-//     yew::start_app::<App>();
-// }
-
-fn main() {
-    
+#[perseus::main(perseus_warp::dflt_server)]
+pub fn main<G: Html>() -> PerseusApp<G> {
+    PerseusApp::new()
+        .template(crate::templates::index::get_template)
 }

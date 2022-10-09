@@ -15,17 +15,15 @@ web-sys = "0.3.59"
 yew = "0.19"
 
 # perseus
-perseus = { version = "0.3.6", features = ["hydrate", "server-side", "wasm2js"] }
-sycamore = { version = "=0.8.1", features = ["ssr", "wasm-bindgen-futures", "serde"] }
+perseus = { version = "=0.4.0-beta.10", features = [ "hydrate" ] }
+sycamore = "^0.8.1"
 
-[target.'cfg(not(target_arch = "wasm32"))'.dev-dependencies]
-fantoccini = "0.17"
-
+# Engine-only dependencies go here
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 tokio = { version = "1", features = [ "macros", "rt", "rt-multi-thread" ] }
-# This is an internal convenience crate that exposes all integrations through features for testing
-perseus-integration = { git = "https://github.com/framesurge/perseus", version = "0.4.0-beta.10", default-features = false}
+perseus-warp = { version = "=0.4.0-beta.10", features = [ "dflt-server" ] }
 
+# Browser-only dependencies go here
 [target.'cfg(target_arch = "wasm32")'.dependencies]
 #
 

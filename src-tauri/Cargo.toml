@@ -1,22 +1,22 @@
 [package]
 name = "pertau"
 version = "0.0.0"
-description = "Perseus + Tauri webapp"
-authors = ["xTeKc"]
-license = ""
-repository = ""
+description = "Perseus + Tauri"
+authors = ["xTekC"]
+license = "MPL-2.0"
+repository = "https://github.com/xTeKc/pertau"
 edition = "2021"
 rust-version = "1.64"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
-tauri-build = "1.1"
+tauri-build = { version = "1.1", features = [] }
 
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = "1.1"
+tauri = { version = "1.1", features = ["api-all"] }
 
 [features]
 # by default Tauri runs in production mode

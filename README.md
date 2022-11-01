@@ -1,25 +1,24 @@
+Use Perseus frontend with Tauri backend.
+
+<br>
+
 # Prerequisites
 
-### Rust:
+### Tauri CLI:
 ```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
-### Perseus CLI:
-```
-cargo install perseus-cli --version 0.4.0-beta.10
+cargo install tauri-cli
 ```
 
 <br>
 
 # Usage
 
-### Clone - CD - Build:
+### Clone and CD to `pertau/` directory:
 ```
-git clone https://github.com/xTeKc/pertau && cd pertau/ && cargo build
+git clone https://github.com/xTeKc/pertau && cd pertau/
 ```
 
-### Serve:
+### Run:
 ```
-perseus serve -w
+cargo tauri dev
 ```
